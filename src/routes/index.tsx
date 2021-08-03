@@ -28,7 +28,7 @@ const IndexRouter: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
-        <Router>
+        <Router basename={window.location.pathname || ""}>
           <Suspense fallback={<p>Loading...</p>}>
             <Switch>
               <Route exact path={siteMap.HomePage.path} component={Home} />
