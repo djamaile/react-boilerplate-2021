@@ -5,7 +5,7 @@ const NotFound: React.FC = () => {
     <div>
       <p>
         Sorry, we could not find this page <br />
-        <Link to="/">Return to Home</Link>
+        <Link to={`${process.env.PUBLIC_URL}/`}>Return to Home</Link>
       </p>
     </div>
   );

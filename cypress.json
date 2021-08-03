@@ -3,7 +3,8 @@
     "testFiles": "**/*.test.{js,ts,jsx,tsx}",
     "componentFolder": "src"
   },
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "http://localhost:3000/react-boilerplate-2021",
   "video": false,
   "screenshotOnRunFailure": false
 }
+
