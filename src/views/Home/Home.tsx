@@ -4,7 +4,7 @@ import { useQuery } from "react-query";
 import { Header } from "../../components";
 
 const Home: React.FC = () => {
-  const { data, error, isFetching } = useQuery(["GET", "/releases/viz", {}]);
+  const { data, error, isFetching } = useQuery(["GET", "/character", {}]);
 
   if (isFetching) return <p>Is loading...</p>;
 
