@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": "../node_modules",
+        "types": [
+            "cypress"
+        ]
+    },
+    "include": [
+        "**/*.*"
+    ]
+}
