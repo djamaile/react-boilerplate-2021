@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-boilerplate-2021/static/css/main.f1945a23.chunk.css",
-    "main.js": "/react-boilerplate-2021/static/js/main.9437d0d8.chunk.js",
+    "main.js": "/react-boilerplate-2021/static/js/main.988ece73.chunk.js",
     "runtime-main.js": "/react-boilerplate-2021/static/js/runtime-main.a01df90a.js",
     "static/js/2.aeefa6d2.chunk.js": "/react-boilerplate-2021/static/js/2.aeefa6d2.chunk.js",
     "static/js/3.07a11ea2.chunk.js": "/react-boilerplate-2021/static/js/3.07a11ea2.chunk.js",
@@ -13,6 +13,6 @@
     "static/js/runtime-main.a01df90a.js",
     "static/js/2.aeefa6d2.chunk.js",
     "static/css/main.f1945a23.chunk.css",
-    "static/js/main.9437d0d8.chunk.js"
+    "static/js/main.988ece73.chunk.js"
   ]
 }
