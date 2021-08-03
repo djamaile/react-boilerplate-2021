@@ -1,0 +1,14 @@
+FROM node:12-alpine AS frontend
+
+WORKDIR /app
+
+COPY . ./
+
+RUN yarn install
+RUN yarn build
+
+# production environment
+FROM nginx:stable-alpine
+COPY --from=frontend /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
