@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-boiler-plate
+  labels:
+    app: react-boiler-plate
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-boiler-plate
+  template:
+    metadata:
+      labels:
+        app: react-boiler-plate
+    spec:
+      containers:
+        - name: react-boiler-plate
+          image: djam97/react-boilerplate-2021:prod
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000

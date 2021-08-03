@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-boiler-plate-service
+spec:
+  selector:
+    app: react-boiler-plate
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
