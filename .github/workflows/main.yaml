@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: lint-and-test-kibbeh
+    name: test-react-boiler-plate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: yarn install
-      - run: yarn build
+      - run: CI='' yarn build
       - run: yarn test
         id: test
   build:
@@ -31,13 +31,13 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "14.x"
       - name: Get yarn cache
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -49,7 +49,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Yarn installation
-        run: yarn install && yarn build
+        run: yarn install && CI='' yarn build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
