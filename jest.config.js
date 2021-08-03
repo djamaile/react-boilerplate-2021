@@ -5,6 +5,7 @@ module.exports = {
     // using ts-jest
     transform: {
       "^.+\\.tsx?$": "ts-jest",
+      "\\.svg$": "<rootDir>/src/__mocks__/fileTransformer.js",
     },
 
     // Runs special logic, such as cleaning up components
