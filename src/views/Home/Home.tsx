@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/global.css";
+import "../../styles/home.css";
 import { useQuery } from "react-query";
 import { Header } from "../../components";
 

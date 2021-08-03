@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import IndexRouter from "./routes";
+import "./styles/global.css";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
