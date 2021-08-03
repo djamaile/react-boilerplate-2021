@@ -3,7 +3,7 @@ import "../../styles/global.css";
 import { useQuery } from "react-query";
 
 const Home: React.FC = () => {
-  const { data, error, isFetching } = useQuery("/releases/viz");
+  const { data, error, isFetching } = useQuery(["GET", "/releases/viz", {}]);
 
   if (isFetching) return <p>Is loading...</p>;
 
