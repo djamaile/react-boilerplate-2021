@@ -8,14 +8,6 @@ import { NotFound } from "../views";
 
 const Home = lazy(() => import("../views/Home/Home"));
 
-export const siteMap = {
-  HomePage: {
-    title: "Home",
-    path: "/",
-    description: "My home page",
-  },
-};
-
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -28,10 +20,14 @@ const IndexRouter: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
-        <Router basename={window.location.pathname || ""}>
+        <Router>
           <Suspense fallback={<p>Loading...</p>}>
             <Switch>
-              <Route exact path={siteMap.HomePage.path} component={Home} />
+              <Route
+                exact
+                path={`${process.env.PUBLIC_URL}/`}
+                component={Home}
+              />
               <Route component={NotFound} />
             </Switch>
           </Suspense>
