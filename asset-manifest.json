@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1945a23.chunk.css",
-    "main.js": "/static/js/main.c5204004.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.f8deb0f1.js",
-    "static/js/2.aeefa6d2.chunk.js": "/static/js/2.aeefa6d2.chunk.js",
-    "static/js/3.07a11ea2.chunk.js": "/static/js/3.07a11ea2.chunk.js",
-    "index.html": "/index.html",
-    "static/js/2.aeefa6d2.chunk.js.LICENSE.txt": "/static/js/2.aeefa6d2.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/react-boilerplate-2021/static/css/main.f1945a23.chunk.css",
+    "main.js": "/react-boilerplate-2021/static/js/main.ad6221e6.chunk.js",
+    "runtime-main.js": "/react-boilerplate-2021/static/js/runtime-main.a01df90a.js",
+    "static/js/2.aeefa6d2.chunk.js": "/react-boilerplate-2021/static/js/2.aeefa6d2.chunk.js",
+    "static/js/3.07a11ea2.chunk.js": "/react-boilerplate-2021/static/js/3.07a11ea2.chunk.js",
+    "index.html": "/react-boilerplate-2021/index.html",
+    "static/js/2.aeefa6d2.chunk.js.LICENSE.txt": "/react-boilerplate-2021/static/js/2.aeefa6d2.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-boilerplate-2021/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8deb0f1.js",
+    "static/js/runtime-main.a01df90a.js",
     "static/js/2.aeefa6d2.chunk.js",
     "static/css/main.f1945a23.chunk.css",
-    "static/js/main.c5204004.chunk.js"
+    "static/js/main.ad6221e6.chunk.js"
   ]
 }
