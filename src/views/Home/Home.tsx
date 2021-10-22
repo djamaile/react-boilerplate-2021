@@ -3,7 +3,7 @@ import "../../styles/home.css";
 import { useQuery } from "react-query";
 import { Header } from "../../components";
 
-const Home: React.FC = () => {
+const Home = () => {
   const { data, error, isFetching } = useQuery(["GET", "/character", {}]);
 
   if (isFetching) return <p>Is loading...</p>;

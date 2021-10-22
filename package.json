@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate-2021",
-  "homepage": "https://djamaile.github.io/react-boilerplate-2021",
+  "homepage": "https://<your username>.github.io/react-boilerplate-2021",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -51,7 +51,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run test --watchAll=false --silent && lint-staged"
+      "pre-commit": "yarn format && yarn run test --watchAll=false --silent && lint-staged"
     }
   },
   "lint-staged": {
