@@ -1,7 +1,7 @@
 import "../../styles/home.css";
 import logo from "../../assets/images/logo.svg";
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
